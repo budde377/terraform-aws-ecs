@@ -1,5 +1,5 @@
 module "wrapper" {
-  source = "../../modules/task"
+  source = "../../modules/task-definition"
 
   for_each = var.items
 

@@ -797,8 +797,8 @@ resource "aws_iam_role_policy_attachment" "service" {
 # Task Definition
 ################################################################################
 
-module "task" {
-  source = "../task"
+module "task_definition" {
+  source = "../task-definition"
 
   count = local.create_task_definition ? 1 : 0
 
@@ -862,7 +862,7 @@ module "task" {
 
 locals {
   create_task_definition = var.create && var.create_task_definition
-  task_definition        = local.create_task_definition ? module.task[0].task_definition_arn : var.task_definition_arn
+  task_definition        = local.create_task_definition ? module.task_definition[0].task_definition_arn : var.task_definition_arn
 }
 
 

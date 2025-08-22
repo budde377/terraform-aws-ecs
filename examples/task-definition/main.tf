@@ -18,7 +18,7 @@ locals {
 ################################################################################
 
 module "ecs_task" {
-  source = "../../modules/task"
+  source = "../../modules/task-definition"
 
   name = "${local.name}-task"
 

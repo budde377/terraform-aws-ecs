@@ -197,8 +197,8 @@ module "service" {
 # Task(s)
 ################################################################################
 
-module "task" {
-  source = "./modules/task"
+module "task_definition" {
+  source = "./modules/task-definition"
 
   for_each = var.create && var.tasks != null ? var.tasks : {}
 

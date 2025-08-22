@@ -2,13 +2,13 @@
 
 Configuration in this directory creates ECS task definition resources in various combinations.
 
-This module is a wrapper over the [task](../../modules/task/) module, which allows managing several task resources in one place.
+This module is a wrapper over the [task-definition](../../modules/task-definition/) module, which allows managing several task resources in one place.
 
 ## Usage
 
 ```hcl
 module "ecs_task_wrapper" {
-  source = "terraform-aws-modules/ecs/aws//wrappers/task"
+  source = "terraform-aws-modules/ecs/aws//wrappers/task-definition"
 
   defaults = {
     create_task_exec_iam_role = true
@@ -55,9 +55,9 @@ No providers.
 
 ## Modules
 
-| Name                                                     | Source             | Version |
-| -------------------------------------------------------- | ------------------ | ------- |
-| <a name="module_wrapper"></a> [wrapper](#module_wrapper) | ../../modules/task | n/a     |
+| Name                                                     | Source                        | Version |
+| -------------------------------------------------------- | ----------------------------- | ------- |
+| <a name="module_wrapper"></a> [wrapper](#module_wrapper) | ../../modules/task-definition | n/a     |
 
 ## Resources
 

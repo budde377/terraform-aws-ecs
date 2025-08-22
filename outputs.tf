@@ -63,5 +63,5 @@ output "services" {
 
 output "tasks" {
   description = "Map of tasks created and their attributes"
-  value       = module.task
+  value       = module.task_definition
 }

@@ -36,7 +36,7 @@ No providers.
 | Name                                                                    | Source             | Version |
 | ----------------------------------------------------------------------- | ------------------ | ------- |
 | <a name="module_ecs_complete"></a> [ecs_complete](#module_ecs_complete) | ../../             | n/a     |
-| <a name="module_ecs_task"></a> [ecs_task](#module_ecs_task)             | ../../modules/task | n/a     |
+| <a name="module_ecs_task"></a> [ecs_task](#module_ecs_task)             | ../../modules/task-definition | n/a     |
 
 ## Resources
 

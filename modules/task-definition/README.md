@@ -6,7 +6,7 @@ Terraform sub-module which creates ECS (Elastic Container Service) task definiti
 
 ```hcl
 module "ecs_task" {
-  source = "terraform-aws-modules/ecs/aws//modules/task"
+  source = "terraform-aws-modules/ecs/aws//modules/task-definition"
 
   name = "my-task"
 
